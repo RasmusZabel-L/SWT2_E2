@@ -1,0 +1,12 @@
+Wie erfolgt die Abgabe des dritten Komplexes der ST2-Übung?
+
+Variante A (bevorzugt):
+
+Fügt mich mit Leserechten zu eurem Projekt auf der gewählten Code-Hostingplattform hinzu
+(github.com: dpukhkaiev und gitlab.hrz.tu-chemnitz.de: s4690290--tu-dresden.de).
+
+Variante B:
+
+Erstellt ein Git-Bundle eures Repositories und legt es in euren gruppeneigenen OPAL-Ordner
+(https://git-scm.com/book/en/v2/Git-Tools-Bundling).
+
