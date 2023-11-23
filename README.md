@@ -52,6 +52,30 @@ Hinzufügen des Surefire-Plugings um die Tests automatisch laufen zu lassen:
 
 ### 5. Test Coverage Tools
 
+    <plugin>
+      <groupId>org.jacoco</groupId>
+      <artifactId>jacoco-maven-plugin</artifactId>
+      <version>0.8.11</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>prepare-agent</goal>
+          </goals>
+        </execution>
+        <execution>
+          <id>report</id>
+          <phase>prepare-package</phase>
+          <goals>
+            <goal>report</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+
+`mvn jacoco:prepare-agent test install jacoco:report`
+
+In VSCode mit Coverage Gutters: Click on `Watch` in lower toolbar while in class under test.
+
 - Sowohl JaCoCo ist ein test coverage tool
 - EclEmma ist ein Eclipse-Plugin, um JaCoCo in Eclipse zu verwenden
 - Um sie zum Projekt hinzuzufügen, muss das Plugin im POM-File hinzugefügt werden
@@ -64,4 +88,6 @@ Hinzufügen des Surefire-Plugings um die Tests automatisch laufen zu lassen:
   - Lines (of code)
   - Methods
   - Classes
+
+
 ### 6. 
