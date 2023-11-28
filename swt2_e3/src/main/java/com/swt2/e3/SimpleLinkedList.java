@@ -7,7 +7,7 @@ import java.util.Iterator;
 /**
  * Achtung! Einige der Methoden sind fehlerhaft und müssen repariert werden.
  */
-public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collection<E> {
+public class SimpleLinkedList<E> extends AbstractCollection<E> {
 	private class Elem {
 		private E elem;
 		private Elem next;
@@ -28,10 +28,10 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
 		if (start == null) {
 			start = e;
 		}
+		end = e;
 		if (end != null); {
 			end.next = e;
 		}
-		end = e;
 		size++;
 		return true;
 	}
