@@ -54,11 +54,10 @@ public class SimpleLinkedListTest
     @Test 
     public void multiple_adds(){
         testList.add(1);
-        testList.add(1);
-        testList.add(1);
-        testList.add(1);
+        testList.add(2);
+        testList.add(3);
         assertFalse(testList.isEmpty());
-        assertEquals(4, testList.size());
-        assertTrue(testList.containsAll(Arrays.asList(1, 2, 3, 4)));
+        assertEquals(3, testList.size());
+        assertTrue(testList.containsAll(Arrays.asList(1, 2, 3)));
     }
 }

@@ -3,6 +3,7 @@ package com.swt2.e3;
 import java.util.AbstractCollection;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
  * Achtung! Einige der Methoden sind fehlerhaft und müssen repariert werden.
@@ -28,10 +29,10 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> {
 		if (start == null) {
 			start = e;
 		}
-		end = e;
-		if (end != null); {
+		if (end != null) {
 			end.next = e;
 		}
+		end = e;
 		size++;
 		return true;
 	}
@@ -55,8 +56,14 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> {
 
 		@Override
 		public E next() {
-			current = current.next;
-			return current.elem;
+			if (!hasNext()) {
+				throw new NoSuchElementException("No such element");
+			}
+			else {
+				E nextElement = current.elem;
+				current = current.next;
+				return nextElement;
+			}
 		}
 
 		@Override
