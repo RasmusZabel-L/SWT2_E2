@@ -91,3 +91,16 @@ In VSCode mit Coverage Gutters: Click on `Watch` in lower toolbar while in class
 
 
 ### 6. 
+Done
+
+### 7. 
+SpotBugs findet sowohl den Fehler in der Add-Methode, 
+als auch, dass next() eine Exception werfen sollte.
+
+Es kann allerdings die Nulllptr-Exception in next()
+nicht eigenständig finden.
+
+Siehe spotbugs.png screenshot.
+
+### 8.
+Siehe debugger.png

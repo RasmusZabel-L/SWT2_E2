@@ -11,6 +11,8 @@ public class App
         SimpleLinkedList<Integer> myList = new SimpleLinkedList<>();
         myList.add(1);
         myList.add(2); 
+        myList.add(3); 
+        myList.add(4); 
         System.out.println("Test Done");
     }
 }
