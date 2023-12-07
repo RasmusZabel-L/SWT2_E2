@@ -1,3 +1,5 @@
+Donnerstag Gruppe 3
+
 # SWT2_E2
 
 ### 3. Maven Kompilier-/ und Testvorgänge
